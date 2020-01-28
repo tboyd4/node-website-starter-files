@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/4ac98192-3284-48c6-a6c9-bc3fb0c515fc/resourceGroups/test-resource-group/providers/Microsoft.Web/sites/dsf-test-boyd",
+    "appService.deploySubpath": ""
+}

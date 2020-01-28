@@ -22,8 +22,12 @@ app.get('/', (req, res) => {
 });
 // route for /profile
 app.get('/profile', (req, res) => {
-    res.send(req.query.id);
-})
+    const person = people.profiles.find(p => p.id === req.query.id);
+    res.render('profile', {
+      title: `About ${person.firstname} ${person.lastname}`,
+      person,
+    });
+  });
 
 // Set up the app to run on local machine server, port 7000
 const server = app.listen(7000, ()=> {
